@@ -20,6 +20,8 @@ body{
     justify-content: center;
     align-items: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
 }
 .grocery-form {
   display: flex;
@@ -31,16 +33,29 @@ body{
 }
 
 .alert {
-  color: red;
-  font-weight: bold;
-  margin: 0px;
+  letter-spacing: 2px;
+  /* margin-bottom: 10px; */
+  padding: 3px;
+  font-size: 12px;
+  width: 70vw;
+  text-align: center;
+  border-radius: 3px;
 }
 
+.alert-danger{
+    color: #721c24;
+    background-color: #f8d7da;
+}
+
+.alert-success{
+    color: #155724;
+    background-color: #d4edda;
+}
 h3 {
   font-size: 24px;
   color: hsl(205, 86%, 17%);
   margin-bottom: 20px;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .form-control {
@@ -57,13 +72,13 @@ input[type="text"] {
   background-color: #f5f5f5;
   width: 70vw;
   padding-right: 70px;
-  font-size: 12px;
-  color:hsl(210, 22%, 49%);;
+  font-size: 16px;
+  color:hsl(210, 22%, 49%);
 }
 
 .submit-btn {
   padding:5px 10px;
-  font-size: 10px;
+  font-size: 14px;
   background-color: hsl(205, 86%, 81%);;
   color: black;
   border: none;
@@ -82,8 +97,12 @@ input[type="text"] {
   width: 70vw;
   display: flex;
   flex-direction: column;
+  visibility: hidden;
 }
 
+.show-container{
+    visibility: visible;
+}
 .grocery-item {
   display: flex;
   align-items: center;
@@ -99,16 +118,17 @@ input[type="text"] {
 }
 
 .grocery-item:not(:first-of-type){
-  border-bottom: 1px solid #f1f5f8;
+  border-top: 1px solid #f1f5f8;
   
 }
 
 .title {
-  font-size: 14px;
+  font-size: 16px;
   color: hsl(209, 61%, 16%);
   margin: 0;
   transition: 0.3s;
   letter-spacing: 0.3px;
+  text-transform: capitalize;
 }
 
 .grocery-item:hover .title{
@@ -130,7 +150,7 @@ input[type="text"] {
 
 .edit-btn img,
 .delete-btn img {
-  width: 14px;
+  width: 18px;
 }
 .edit-btn img:hover,
 .delete-btn img:hover{
@@ -146,7 +166,7 @@ input[type="text"] {
 }
 
 .clear-btn {
-  padding: 5px;
+  padding: 10px;
   background-color: transparent;
   color: hsl(360, 71%, 66%);
   border: none;
