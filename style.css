@@ -67,6 +67,7 @@ h3 {
 input[type="text"] {
   padding: 10px;
   border: 1px solid #ccc;
+  border: none;
   border-radius: 5px;
   flex-grow: 1;
   background-color: #f5f5f5;
@@ -75,11 +76,15 @@ input[type="text"] {
   font-size: 16px;
   color:hsl(210, 22%, 49%);
 }
+input[type="text"]:focus{
+  /* outline: solid 1px hsl(205, 86%, 81%); */
+  outline: solid 1px hsl(205, 86%, 17%);
+}
 
 .submit-btn {
   padding:5px 10px;
   font-size: 14px;
-  background-color: hsl(205, 86%, 81%);;
+  background-color: hsl(205, 86%, 81%);
   color: black;
   border: none;
   border-radius: 5px;
@@ -181,4 +186,3 @@ input[type="text"] {
 .clear-btn:hover {
   color: hsl(360, 67%, 44%)
 }
-
