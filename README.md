@@ -2,6 +2,9 @@
 
 This repository contains a fully responsive web application for managing a grocery list. The application allows users to add, edit, and delete grocery items, and it utilizes the browser's local storage to persist the list even after refreshing the page.
 
+## Live Demo
+https://hussenmohamed.github.io/Grocery-List/
+
 ## Features
 
 - **Add Items**: Users can enter the name of a grocery item and click the "Submit" button to add it to the list. The item will be saved in the local storage, allowing it to be retrieved even after closing the browser.
